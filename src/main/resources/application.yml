@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:redis-cache
+    driver-class-name: org.h2.Driver
+  redis:
+    host: localhost
+    port: 6379
+  jpa:
+    database: h2
+    hibernate:
+      ddl-auto: create
+  cache:
+    type: redis
